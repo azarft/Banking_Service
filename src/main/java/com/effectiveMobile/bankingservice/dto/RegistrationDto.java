@@ -1,21 +1,21 @@
 package com.effectiveMobile.bankingservice.dto;
 
+import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+
 @Builder
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-public class AccountDto {
-    private Long id;
-
-    private BigDecimal balance;
-
+public class RegistrationDto {
+    private String login;
+    private String password;
     private BigDecimal initialDeposit;
-
-    private Long userId;
+    private String phoneNumber;
+    private String email;
 }
