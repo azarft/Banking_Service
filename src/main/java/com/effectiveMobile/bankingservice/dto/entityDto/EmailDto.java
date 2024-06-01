@@ -1,4 +1,4 @@
-package com.effectiveMobile.bankingservice.dto;
+package com.effectiveMobile.bankingservice.dto.entityDto;
 
 import lombok.*;
 

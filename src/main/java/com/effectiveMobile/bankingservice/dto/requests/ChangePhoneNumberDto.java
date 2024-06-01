@@ -1,4 +1,6 @@
-package com.effectiveMobile.bankingservice.dto;
+package com.effectiveMobile.bankingservice.dto.requests;
+
+
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PhoneNumberDto {
-    private Long numberId;
-    private String phoneNumber;
-    private Long userId;
+public class ChangePhoneNumberDto {
+    private String oldPhoneNumber;
+    private String newPhoneNumber;
 }

@@ -1,5 +1,6 @@
-package com.effectiveMobile.bankingservice.dto;
+package com.effectiveMobile.bankingservice.dto.entityDto;
 
+import com.effectiveMobile.bankingservice.entities.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,11 +18,14 @@ public class UserDto {
 
     private String login;
 
-    private String email;
-
-    private String phoneNumber;
-
     private String fullName;
 
     private LocalDate dateOfBirth;
+
+    public UserDto(User user) {
+        this.login = user.getLogin();
+        this.fullName = user.getFullName();
+        this.id = user.getId();
+        this.dateOfBirth = user.getDateOfBirth();
+    }
 }

@@ -1,6 +1,6 @@
 package com.effectiveMobile.bankingservice.mappers;
 
-import com.effectiveMobile.bankingservice.dto.PhoneNumberDto;
+import com.effectiveMobile.bankingservice.dto.entityDto.PhoneNumberDto;
 import com.effectiveMobile.bankingservice.entities.PhoneNumber;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

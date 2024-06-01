@@ -1,12 +1,12 @@
-package com.effectiveMobile.bankingservice.dto;
+package com.effectiveMobile.bankingservice.dto.requests;
 
-import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 @Builder
 @Data
@@ -18,4 +18,6 @@ public class RegistrationDto {
     private BigDecimal initialDeposit;
     private String phoneNumber;
     private String email;
+    private String fullName;
+    private LocalDate birthday;
 }

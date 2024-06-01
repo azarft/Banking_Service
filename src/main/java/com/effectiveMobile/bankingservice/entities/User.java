@@ -29,7 +29,6 @@ public class User {
     @Column(nullable = false)
     private String fullName;
 
-    @Column(nullable = false)
     private LocalDate dateOfBirth;
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
